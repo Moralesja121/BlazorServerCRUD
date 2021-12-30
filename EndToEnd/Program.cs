@@ -23,7 +23,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 
 // Read the connection string from the appsettings.json file
 // Set the database connection for the EndtoEndContext
-builder.Services.AddDbContext<EndToEndDB.Data.EndToEnd.EndtoEndContext>(options =>
+builder.Services.AddDbContext<EndToEnd.Data.EndToEnd.EndtoEndContext>(options =>
 options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
 
